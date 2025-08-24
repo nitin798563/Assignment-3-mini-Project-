@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editkaro.in Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Editkaro.in Portfolio</h1>
+    <p>Showcasing expertise in social media marketing, video editing & creative ads.</p>
+  </header>
+  <div class="categories">
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="short-form">Short-Form Videos</button>
+    <button class="category-btn" data-category="long-form">Long-Form Videos</button>
+    <button class="category-btn" data-category="gaming">Gaming Videos</button>
+    <button class="category-btn" data-category="football">Football Edits</button>
+    <button class="category-btn" data-category="ecommerce">eCommerce Ads</button>
+    <button class="category-btn" data-category="documentary">Documentary Style</button>
+    <button class="category-btn" data-category="color">Color Grading</button>
+    <button class="category-btn" data-category="anime">Anime Videos</button>
+    <button class="category-btn" data-category="ads">Ads</button>
+  </div>
+  <div class="portfolio-grid" id="portfolio">
+    <div class="video-card" data-category="short-form">
+      <img src="https://i.imgur.com/zEr7Hgga.jpg" class="video-thumb" alt="Short Clip 1" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+      <div class="video-details">
+        <div class="video-title">Social Media Promo</div>
+        <div class="video-type">Short-Form Video</div>
+        <div class="video-desc">Engaging Instagram reel for client campaign.</div>
+      </div>
+    </div>
+    <div class="video-card" data-category="long-form">
+      <img src="https://i.imgur.com/yXl8r6B.jpg" class="video-thumb" alt="Long Video" data-video="https://www.w3schools.com/html/movie.mp4">
+      <div class="video-details">
+        <div class="video-title">YouTube Documentary</div>
+        <div class="video-type">Long-Form Video</div>
+        <div class="video-desc">Full-length documentary edit showcasing story development.</div>
+      </div>
+    </div>
+    <div class="video-card" data-category="gaming">
+      <img src="https://i.imgur.com/zU1wvlH.jpg" class="video-thumb" alt="Gaming Montage" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+      <div class="video-details">
+        <div class="video-title">Game Highlights</div>
+        <div class="video-type">Gaming Video</div>
+        <div class="video-desc">Fast-paced edit for competitive gaming event.</div>
+      </div>
+    </div>
+    <!-- Add more samples as needed -->
+  </div>
+  <div id="lightbox">
+    <button class="close-btn" onclick="closeLightbox()">&times;</button>
+    <video controls autoplay></video>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
